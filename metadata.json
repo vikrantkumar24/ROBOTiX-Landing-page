@@ -1,0 +1,8 @@
+{
+  "name": "Remix ROBOFEST - ROBOTiX CLUB NIT Raipur",
+  "description": "Central India\u0027s premier robotics convention on 22-23 March at NIT Raipur. ₹90,000+ Prize Pool across combat, simulation, and embedded tracks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
