@@ -729,19 +729,61 @@ export const GatewayHero: React.FC<GatewayHeroProps> = ({
           }}
           className="relative z-20 flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto my-auto"
         >
-          {/* LIVE SYSTEM STATUS BEACON */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-black/75 backdrop-blur-xl border border-[#ff3b30] text-[#ff3b30] font-mono text-xs uppercase tracking-widest clip-chamfer-sm mb-4 shadow-[0_0_25px_rgba(255,59,48,0.5)]">
-            <Flame className="w-4 h-4 text-[#ffcc00] animate-bounce" />
-            <span className="text-white font-bold">ROBOTiX CLUB • NIT RAIPUR PRESENTS</span>
-          </div>
 
-          {/* CHROME ROBOT HEAD LOGO */}
-          <div className="relative my-2 flex items-center justify-center">
-            <img
-              src="/assets/aistudio/robologo.b3108646bff169e71fee_41c36fc7.webp"
-              alt="ROBOFEST Combat Robot Head"
-              className="w-32 sm:w-44 md:w-52 h-auto object-contain filter drop-shadow-[0_0_30px_rgba(255,59,48,0.8)]"
-            />
+          {/* OFFICIAL NIT RAIPUR ROBOTICS COMBAT CREST */}
+          <div 
+            className="relative my-2 sm:my-3 flex items-center justify-center group cursor-pointer select-none"
+            title="ROBOTiX Club • National Institute of Technology Raipur"
+          >
+            {/* Ambient Backlight Pulsing Rings */}
+            <div className="absolute -inset-4 bg-gradient-to-r from-[#ff3b30]/20 via-[#ffcc00]/15 to-[#ff3b30]/20 rounded-full blur-2xl group-hover:blur-3xl group-hover:from-[#ff3b30]/35 transition-all duration-700 pointer-events-none" />
+
+            {/* Cybernetic Calibration HUD Aperture */}
+            <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-44 md:h-44 flex items-center justify-center">
+              {/* Outer Rotating HUD Arc & Tech Reticle */}
+              <svg 
+                className="absolute inset-0 w-full h-full animate-[spin_24s_linear_infinite] pointer-events-none opacity-60 group-hover:opacity-100 transition-opacity" 
+                viewBox="0 0 160 160"
+              >
+                <circle cx="80" cy="80" r="76" stroke="rgba(255,255,255,0.12)" strokeWidth="1" fill="none" />
+                <circle cx="80" cy="80" r="72" stroke="#ff3b30" strokeWidth="2" strokeDasharray="14 18 36 12" fill="none" opacity="0.8" />
+                <circle cx="80" cy="80" r="66" stroke="#ffcc00" strokeWidth="1" strokeDasharray="4 16" fill="none" opacity="0.6" />
+                {/* 4 Cardinal Reticle Marks */}
+                <line x1="80" y1="2" x2="80" y2="12" stroke="#ff3b30" strokeWidth="2" />
+                <line x1="80" y1="148" x2="80" y2="158" stroke="#ff3b30" strokeWidth="2" />
+                <line x1="2" y1="80" x2="12" y2="80" stroke="#ff3b30" strokeWidth="2" />
+                <line x1="148" y1="80" x2="158" y2="80" stroke="#ff3b30" strokeWidth="2" />
+              </svg>
+
+              {/* Counter-rotating Inner Micro-dash Ring */}
+              <svg 
+                className="absolute inset-0 w-full h-full animate-[spin_16s_linear_infinite_reverse] pointer-events-none opacity-40 group-hover:opacity-75 transition-opacity" 
+                viewBox="0 0 160 160"
+              >
+                <circle cx="80" cy="80" r="58" stroke="rgba(255,255,255,0.2)" strokeWidth="1" strokeDasharray="2 12" fill="none" />
+              </svg>
+
+              {/* Hexagonal Tactical Shield Plate */}
+              <div className="relative w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-2xl bg-gradient-to-b from-[#141824] via-[#090b10] to-[#040508] border border-[#ff3b30]/50 group-hover:border-[#ffcc00] p-3 flex flex-col items-center justify-center shadow-[0_0_25px_rgba(255,59,48,0.4)] group-hover:shadow-[0_0_35px_rgba(255,59,48,0.7)] transition-all duration-300">
+                {/* Tactical Corner Brackets */}
+                <span className="absolute top-1 left-1 w-2 h-2 border-t border-l border-[#ffcc00]" />
+                <span className="absolute top-1 right-1 w-2 h-2 border-t border-r border-[#ffcc00]" />
+                <span className="absolute bottom-1 left-1 w-2 h-2 border-b border-l border-[#ffcc00]" />
+                <span className="absolute bottom-1 right-1 w-2 h-2 border-b border-r border-[#ffcc00]" />
+
+                {/* Official ROBOTiX Club NIT Raipur Logo */}
+                <img
+                  src="/assets/aistudio/image_66ed7668.png"
+                  alt="NIT Raipur ROBOTiX Club Insignia"
+                  className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 object-contain filter drop-shadow-[0_0_12px_rgba(255,255,255,0.85)] group-hover:scale-105 transition-transform duration-300"
+                />
+
+                {/* Tech Badge Below Logo */}
+                <div className="absolute -bottom-2.5 px-2.5 py-0.5 bg-[#0c0e15] border border-[#ff3b30] rounded-sm text-[8px] sm:text-[9px] font-mono font-bold tracking-widest text-[#ffcc00] whitespace-nowrap shadow-[0_0_10px_rgba(255,59,48,0.5)]">
+                  NIT RAIPUR
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* HEADLINE */}
